@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+            <div id="menu">
+                
+                    <ul>
+                        <li class="list active"><a href="#">
+                            <span id="icons"><i class="bi bi-house"></i></span>
+                            <span id="text">Home</span>
+                        </a>
+                        </li>
+                
+        
+                        <li class="list"><a href="#">
+                            <span id="icons"><i class="bi bi-person"></i></span>
+                                <span id="text">Profile</span>
+                        </a>
+                        </li>
+                    
+                        <li class="list"><a href="#">
+                            <span id="icons"><i class="bi bi-chat-text"></i></span>
+                                <span id="text">Messages</span>
+                        </a>
+                        </li>
+    
+    
+                        <li class="list"><a href="#">
+                            <span id="icons"><i class="bi bi-gear"></i></span>
+                                <span id="text">Settings</span>
+                        </a>
+                        </li>
+                
+                
+
+                        <li class="list"><a href="#">
+                            <span id="icons"><i class="bi bi-question"></i></span>
+                                <span id="text">Help</span>
+                        </a>
+                        </li>
+        
+            
+    
+                        <li class="list"><a href="#">
+                            <span id="icons"><i class="bi bi-lock"></i></span>
+                                <span id="text">Password</span>
+                        </a>
+                        </li>
+    
+    
+        
+                        <li class="list"><a href="#">
+                            <span id="icons"><i class="bi bi-box-arrow-in-right"></i></span>
+                                <span id="text">Sign Out</span>
+                        </a>
+                        </li>
+                    </ul>
+            </div>
+            <script>
+                const list = document.querySelectorAll('.list')
+                function activeLink(){
+                    list.forEach((item)=>
+                    item.classList.remove('active'))
+                    this.classList.add('active')
+                }
+                list.forEach((item) =>
+                item.addEventListener('click',activeLink)
+                )
+            </script>
+</body>
+</html>
